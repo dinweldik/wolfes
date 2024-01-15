@@ -1,5 +1,5 @@
 <script lang="ts">
-	import logo from '$lib/assets/logo.png';
+	import wolf from '$lib/assets/wolf.png';
 	import { getAuthContext } from '$lib/auth-context';
 	import { getContext } from 'svelte';
 	const user = getAuthContext();
@@ -21,26 +21,24 @@
 	</div>
 	<a href="/">
 		<div class="logo center">
-			<img src={logo} alt="logo" />
+			<img src={wolf} alt="logo" />
 			<!-- 			<div class="centered">marduk</div> -->
 		</div>
 	</a>
 	{#if user}
 		<p class="center">🖖 {user.email}</p>
 	{:else}
-		<h2 class="center title"><a href="/">dinweldik</a></h2>
+		<h2 class="center title"><a href="/">fc fußballwölfe</a></h2>
 	{/if}
-	<!-- 		<nav>
+	<nav>
 		<ul>
-		{#if user}
-				<li><a href="/lists">📒 My lists</a></li>
-				<li><a href="/notes">📝 Notes</a></li>
-				<li><a href="/settings">⚙️ Settings</a></li>
-			{:else}
-				<li><a href="/login">🚪 Sign Up to create your own private lists</a></li>
-			{/if} 
+			<li><a href="#">⬇️ Verein</a></li>
+			<li><a href="#">Training</a></li>
+			<li><a href="#">Ostercamp</a></li>
+			<li><a href="#">Sommercamps</a></li>
+			<li><a href="#">Herbstcamps</a></li>
 		</ul>
-	</nav> -->
+	</nav>
 </header>
 
 <style lang="postcss">

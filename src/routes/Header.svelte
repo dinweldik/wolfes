@@ -1,47 +1,51 @@
 <script lang="ts">
-	import wolf from '$lib/assets/wolf.png';
+	import logo from '$lib/assets/logo.png';
 	import { getAuthContext } from '$lib/auth-context';
+	import Hero from '$lib/components/Hero.svelte';
 	import { getContext } from 'svelte';
 	const user = getAuthContext();
 </script>
 
 <header>
 	<div class="external-apps">
-		<!-- TODO add moving text -->
-		<!-- 		<p class="alpha">alpha</p>
-		{#if user}
-			<form action="/logout" method="POST">
-				<button>🚪 Logout</button>
-			</form>
-		{:else}
-			<form action="/login" method="GET">
-				<button>🗝️ Login</button>
-			</form>
-		{/if} -->
+		<a class="btn" href="anmeldung">⚽️ Zur Anmeldung</a>
 	</div>
-	<a href="/">
-		<div class="logo center">
-			<img src={wolf} alt="logo" />
-			<!-- 			<div class="centered">marduk</div> -->
-		</div>
-	</a>
-	{#if user}
-		<p class="center">🖖 {user.email}</p>
-	{:else}
-		<h2 class="center title"><a href="/">fc fußballwölfe</a></h2>
-	{/if}
+	<Hero />
 	<nav>
 		<ul>
-			<li><a href="#">⬇️ Verein</a></li>
-			<li><a href="#">Training</a></li>
-			<li><a href="#">Ostercamp</a></li>
-			<li><a href="#">Sommercamps</a></li>
-			<li><a href="#">Herbstcamps</a></li>
+			<li><a href="/">Startseite</a></li>
+			<li><a href="/verein">Verein</a></li>
+			<!-- 			<li><a href="/fotos">Fotos</a></li> -->
+			<li><a href="/team">Team</a></li>
 		</ul>
 	</nav>
 </header>
 
 <style lang="postcss">
+	.btn {
+		background: var(--color-primary);
+		border: 1px solid;
+		color: #000;
+		-webkit-transition: all ease-out 0.2s;
+		transition: all ease-out 0.2s;
+		border-radius: 30px;
+		padding: var(--size-1) var(--size-4);
+		display: inline-block;
+	}
+	.external-apps {
+		padding: var(--size-2) var(--size-content-px);
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		gap: var(--size-8);
+		background: var(--color-primary);
+		& p,
+		& a {
+			color: var(--color-black);
+			font-weight: bold;
+			text-decoration: none;
+		}
+	}
 	.logo {
 		position: relative;
 		margin-block: var(--size-4);
@@ -85,18 +89,12 @@
 	}
 
 	.external-apps {
-		padding: var(--size-2) var(--size-content-px);
+		padding: var(--size-2);
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-end;
 		gap: var(--size-8);
-		background: var(--color-primary);
-		& p,
-		& a {
-			//color: var(--color-black);
-			font-weight: bold;
-			text-decoration: none;
-		}
+		background: none;
 	}
 	.alpha {
 		text-transform: uppercase;
@@ -109,17 +107,23 @@
 	h2 {
 		color: var(--color-primary-500);
 	}
+	h2:hover {
+		color: var(--color-warning-500);
+	}
 
 	nav {
 		padding: var(--size-4) var(--size-content-px);
+		background: #f9f9f9; /* Example background color */
+		border: 1px solid #ddd; /* Example border */
+		border-radius: var(--size-2);
 		& ul {
 			list-style: none;
 			padding: 0;
 			margin: 0;
 			display: flex;
 			flex-wrap: wrap;
-			justify-content: flex-start;
-			gap: var(--size-4);
+			justify-content: center;
+			gap: var(--size-8);
 			& a {
 				font-size: var(--scale-1);
 				color: var(--color-primary-500);

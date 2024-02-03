@@ -69,8 +69,8 @@
   --scale-fluid-10: clamp(6rem, 4.8rem + 4vw, 8rem);
   --scale-fluid-000: clamp(0.625rem, 0.55rem + 0.25vw, 0.75rem);
   --scale-fluid-00: clamp(0.75rem, 0.675rem + 0.25vw, 0.875rem);
-  --font-text: "Roboto Mono", monospace;
-  --font-display: "Roboto Mono", monospace;
+  --font-text: "HKGrotesk", -apple-system, sans-serif;
+  --font-display: "GTFlexa", -apple-system sans-serif;
   --font-code: "Roboto Mono", monospace;
   --weight-light: 300;
   --weight-regular: 400;
@@ -234,7 +234,7 @@
   --color-primary-200: hsl(139, 66%, 85%);
   --color-primary-300: hsl(141, 70%, 72%);
   --color-primary-400: hsl(143, 62%, 57%);
-  --color-primary-500: #fff;
+  --color-primary-500: #f79009;
   --color-primary-600: hsl(143, 100%, 31%);
   --color-primary-700: hsl(155, 100%, 23%);
   --color-primary-800: hsl(166, 100%, 17%);

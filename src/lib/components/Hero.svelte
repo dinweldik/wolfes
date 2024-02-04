@@ -1,7 +1,7 @@
 <script lang="ts">
 	export let productInfo = {
 		name: 'SV Fußballwölfe',
-		description: 'Die Fußballwölfe sind ein Fußballverein aus Mauerbach.'
+		description: 'Waldgasse 1, 3001 Mauerbach'
 	};
 	import logo from '$lib/assets/logo.png';
 </script>
@@ -28,6 +28,7 @@
 		margin-bottom: 16px;
 		-ms-flex-align: center;
 		align-items: center;
+		font: var(--text-sm);
 
 		& h1 {
 			color: var(--color-primary);

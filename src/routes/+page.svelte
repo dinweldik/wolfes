@@ -91,6 +91,16 @@
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: var(--size-4);
+
+		& img {
+			border: 1px solid #ddd; /* Example border */
+			border-radius: var(--size-2);
+		}
+
+		& img:hover {
+			-webkit-transform: scale(1.01);
+			transform: scale(1.01);
+		}
 		@media screen and (max-width: 768px) {
 			grid-template-columns: 1fr;
 		}

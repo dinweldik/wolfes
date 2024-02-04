@@ -32,6 +32,10 @@
 		padding: var(--size-1) var(--size-4);
 		display: inline-block;
 	}
+	.btn:hover {
+		-webkit-transform: scale(1.01);
+		transform: scale(1.01);
+	}
 	.external-apps {
 		padding: var(--size-2) var(--size-content-px);
 		display: flex;
@@ -77,8 +81,15 @@
 		53%,
 		57%,
 		100% {
-			text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0fa, 0 0 80px #0fa,
-				0 0 90px #0fa, 0 0 100px #0fa, 0 0 150px #0fa;
+			text-shadow:
+				0 0 4px #fff,
+				0 0 11px #fff,
+				0 0 19px #fff,
+				0 0 40px #0fa,
+				0 0 80px #0fa,
+				0 0 90px #0fa,
+				0 0 100px #0fa,
+				0 0 150px #0fa;
 		}
 
 		20%,

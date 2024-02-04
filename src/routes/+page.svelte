@@ -16,9 +16,7 @@
 
 <section class="content">
 	<h1>Aktuelle Fußballcamps</h1>
-	<div class="event-cards">
-		<Camps {events} />
-	</div>
+	<Camps {events} />
 
 	<div>
 		<h1>Herzlich Willkommen zu unseren Sommer-Fußballcamps!</h1>
@@ -105,16 +103,6 @@
 			grid-template-columns: 1fr;
 		}
 	}
-	.event-cards {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		gap: var(--size-5);
-	}
-
-	.event {
-		margin-block: var(--size-5);
-	}
-
 	h1,
 	h2 {
 		text-align: center;

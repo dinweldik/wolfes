@@ -25,7 +25,6 @@
 	.btn {
 		background: var(--color-primary);
 		border: 1px solid;
-		color: #000;
 		-webkit-transition: all ease-out 0.2s;
 		transition: all ease-out 0.2s;
 		border-radius: 30px;

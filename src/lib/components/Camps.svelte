@@ -2,22 +2,31 @@
 	export let events;
 </script>
 
-{#each events as event}
-	<div class="pricing-box">
-		<span class="price">{event.date}</span>
-		<a class="btn" href="/anmeldung">⚽️ Zur Anmeldung</a>
-		<span class="pricing-table-divider" />
-	</div>
-{/each}
+<div class="event-cards">
+	{#each events as event}
+		<div class="pricing-box">
+			<span class="price">{event.date}</span>
+			<a class="btn" href="/anmeldung">⚽️ Zur Anmeldung</a>
+			<span class="pricing-table-divider" />
+		</div>
+	{/each}
+</div>
 
 <style>
+	.event-cards {
+		margin-top: var(--size-5);
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: var(--size-5);
+
+		@media screen and (max-width: 768px) {
+			grid-template-columns: 1fr 1fr;
+			font: var(--text-sm);
+			overflow-x: auto;
+		}
+	}
 	a {
 		text-decoration: none;
-	}
-
-	.pricing-table h2 {
-		padding: 35px 10px;
-		margin: 0;
 	}
 	.description {
 		margin-top: 20px;
@@ -59,14 +68,18 @@
 	.btn {
 		background: var(--color-primary);
 		border: 1px solid;
-		color: #000;
+		font-weight: var(--weight-bold);
 		-webkit-transition: all ease-out 0.2s;
 		transition: all ease-out 0.2s;
 		border-radius: 30px;
-		padding: 7px 40px;
+		padding: var(--size-1) var(--size-4);
 		display: inline-block;
 		margin-top: 20px;
 		font: var(--text-sm);
+		@media screen and (max-width: 768px) {
+			font: var(--text-xs);
+			padding-inline: var(--size-3);
+		}
 	}
 	.pricing-table-divider {
 		display: block;
@@ -74,14 +87,6 @@
 		background: rgba(0, 0, 0, 0.08);
 		max-width: 80%;
 		margin: 20px auto 0;
-	}
-	.pricing-table {
-		border-radius: 3px;
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		grid-column-gap: 20px;
-		grid-row-gap: 20px;
-		text-align: center;
 	}
 
 	.pricing-box {
@@ -93,26 +98,5 @@
 	.pricing-box:hover {
 		-webkit-transform: scale(1.01);
 		transform: scale(1.01);
-	}
-	.pricing-table ul li {
-		padding: 3px 0;
-	}
-	.pricing-table ul {
-		padding: 15px 60px;
-		text-align: left;
-	}
-	@media (max-width: 750px) {
-		.pricing-table {
-			grid-template-columns: 1fr;
-		}
-		.pricing-table > div:nth-child(3) {
-			grid-row-start: 1;
-		}
-		.pricing-table > div:nth-child(2) {
-			grid-row-start: 2;
-		}
-		.pricing-table > div {
-			align-self: top;
-		}
 	}
 </style>

@@ -17,7 +17,10 @@ const config = {
 	],
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter({
+			runtime: 'nodejs18.x',
+			regions: ['arn1']
+		})
 
 		// remove this if you don't want prerendering
 		/* 	prerender: {

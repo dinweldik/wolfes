@@ -19,7 +19,10 @@ const config = {
 	],
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter({
+			runtime: 'nodejs18.x',
+			regions: ['arn1']
+		})
 	}
 };
 

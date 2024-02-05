@@ -1,6 +1,6 @@
 // vite.config.js
 import { sveltekit } from '@sveltejs/kit/vite';
-import adapter from '@sveltejs/adapter-cloudflare';
+import adapter from '@sveltejs/adapter-node';
 import preprocess from 'svelte-preprocess';
 
 /** @type {import('vite').UserConfig} */
@@ -19,13 +19,7 @@ const config = {
 	],
 
 	kit: {
-		adapter: adapter({
-			// See below for an explanation of these options
-			routes: {
-				include: ['/*'],
-				exclude: ['<all>']
-			}
-		})
+		adapter: adapter()
 	}
 };
 

@@ -12,6 +12,7 @@
 </script>
 
 <main>
+	<img src="https://fussballwoelfe.goatcounter.com/count?p=/test" />
 	<Header />
 	{#if $navigating}
 		<div class="spinner">
@@ -24,6 +25,9 @@
 </main>
 
 <style lang="postcss">
+	img {
+		display: none;
+	}
 	main {
 		margin: 0;
 	}

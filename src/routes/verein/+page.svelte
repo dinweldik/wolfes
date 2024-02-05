@@ -73,6 +73,10 @@
 		margin: 0;
 		padding: 0;
 		list-style: none;
+
+		@media screen and (max-width: 768px) {
+			grid-template-columns: 1fr; /* One column on small screens */
+		}
 	}
 
 	.text-cards li {

@@ -69,8 +69,8 @@
   --scale-fluid-10: clamp(6rem, 4.8rem + 4vw, 8rem);
   --scale-fluid-000: clamp(0.625rem, 0.55rem + 0.25vw, 0.75rem);
   --scale-fluid-00: clamp(0.75rem, 0.675rem + 0.25vw, 0.875rem);
-  --font-text: "HKGrotesk", -apple-system, sans-serif;
-  --font-display: "GTFlexa", -apple-system sans-serif;
+  --font-text: "Recursive Variable", sans-serif;
+  --font-display: "Recursive Variable", sans-serif;
   --font-code: "Roboto Mono", monospace;
   --weight-light: 300;
   --weight-regular: 400;

@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@fontsource-variable/recursive':
+    specifier: ^5.0.16
+    version: 5.0.16
   '@fortawesome/free-brands-svg-icons':
     specifier: ^6.5.1
     version: 6.5.1
@@ -763,6 +766,10 @@ packages:
     resolution: {integrity: sha512-gMsVel9D7f2HLkBma9VbtzZRehRogVRfbr++f06nL2vnCGCNlzOD+/MUov/F4p8myyAHspEhVobgjpX64q5m6A==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
+
+  /@fontsource-variable/recursive@5.0.16:
+    resolution: {integrity: sha512-+Yn6w5wh4f7cVKWRRmkoVNIqhUAwptMN+fmKwaefmPN3X76k2lEdG/rnbVHREOirnlI4T837OVBGAKmvVUA5kg==}
+    dev: false
 
   /@fontsource/fira-mono@5.0.8:
     resolution: {integrity: sha512-8OJiUK2lzJjvDlkmamEfhtpL1cyFApg1Pk4kE5Pw5UTf1ETF3Yy/pprgwV5I+LQPDjuFvinsinT9xSUZ2b/zuQ==}

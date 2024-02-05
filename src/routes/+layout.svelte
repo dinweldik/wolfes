@@ -1,4 +1,6 @@
 <script lang="ts">
+	// Supports weights 300-900
+	import '@fontsource-variable/recursive';
 	import { navigating } from '$app/stores';
 	import Footer from './Footer.svelte';
 	import Header from './Header.svelte';

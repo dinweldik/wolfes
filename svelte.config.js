@@ -1,7 +1,7 @@
 import { mdsvex } from 'mdsvex';
 import mdsvexConfig from './mdsvex.config.js';
 import preprocess from 'svelte-preprocess';
-import adapter from '@sveltejs/adapter-vercel';
+import adapter from '@sveltejs/adapter-cloudflare';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -18,8 +18,11 @@ const config = {
 
 	kit: {
 		adapter: adapter({
-			runtime: 'nodejs18.x',
-			regions: ['arn1']
+			// See below for an explanation of these options
+			routes: {
+				include: ['/*'],
+				exclude: ['<all>']
+			}
 		})
 
 		// remove this if you don't want prerendering

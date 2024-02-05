@@ -1,6 +1,6 @@
 // vite.config.js
 import { sveltekit } from '@sveltejs/kit/vite';
-import adapter from '@sveltejs/adapter-vercel';
+import adapter from '@sveltejs/adapter-cloudflare';
 import preprocess from 'svelte-preprocess';
 
 /** @type {import('vite').UserConfig} */
@@ -20,8 +20,11 @@ const config = {
 
 	kit: {
 		adapter: adapter({
-			runtime: 'nodejs18.x',
-			regions: ['arn1']
+			// See below for an explanation of these options
+			routes: {
+				include: ['/*'],
+				exclude: ['<all>']
+			}
 		})
 	}
 };

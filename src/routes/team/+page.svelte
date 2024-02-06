@@ -9,13 +9,13 @@
 	<h1>Unser Team</h1>
 	<div class="team-grid">
 		<div class="team-member">
-			<img src={blank_avatar} alt="Karim Rajih" />
-			<p>Karim Rajih</p>
+			<img src={blank_avatar} alt="Karim Rajhi" />
+			<p>Karim Rajhi</p>
 		</div>
 		<div class="team-member">
-			<img src={blank_avatar} alt="Rida Rajih" />
+			<img src={blank_avatar} alt="Rida Rajhi" />
 			<div class="name">
-				<p>Rida Rajih</p>
+				<p>Rida Rajhi</p>
 				<a href="https://instagram.com/coach.rida" target="_blank"><Fa icon={faInstagram} /></a>
 			</div>
 		</div>

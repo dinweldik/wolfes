@@ -7,7 +7,7 @@
 		<div class="footer-contact">
 			<p class="bold">SV Fußballwölfe</p>
 			<p>Waldgasse 1<br />3001 Mauerbach</p>
-			<p>Organschaftliche Vertreter: Karim Rajih</p>
+			<p>Organschaftliche Vertreter: Karim Rajhi</p>
 			<p>Email: <a href="mailto:verein@feuerwölfe.at">verein@fussballwoelfe.at</a></p>
 			<p>Telefon: +43 6603749790</p>
 		</div>

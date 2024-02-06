@@ -4,11 +4,14 @@
 
 <div class="event-cards">
 	{#each events as event}
-		<div class="pricing-box">
-			<span class="price">{event.date}</span>
-			<a class="btn" href="/anmeldung">⚽️ Zur Anmeldung</a>
-			<span class="pricing-table-divider" />
-		</div>
+		<a class="" href="/anmeldung">
+			<div class="pricing-box">
+				<span class="price">{event.date}</span>
+				<span class="pricing-table-divider" />
+				<span class="description">⚽️ Jetzt Anmelden</span>
+				<span class="pricing-table-divider" />
+			</div>
+		</a>
 	{/each}
 </div>
 
@@ -28,18 +31,10 @@
 	a {
 		text-decoration: none;
 	}
-	.description {
-		margin-top: 20px;
-		font-size: 0.85em;
-		padding: 0 40px;
-		font-style: italic;
-	}
 
 	.description {
-		margin-top: 20px;
-		font-size: 0.85em;
-		padding: 0 40px;
-		font-style: italic;
+		padding-inline: var(--size-3);
+		font: var(--text-sm);
 	}
 	.price,
 	.pricing-box {
@@ -50,11 +45,10 @@
 	.price {
 		background: var(--color-primary);
 		color: #fff;
-		font-size: 1em;
-		font-weight: 600;
-		position: relative;
+		font-weight: var(--weight-bold);
 		padding: 20px 10px;
 		display: block;
+		height: 6em;
 	}
 	.pricing-box:nth-child(2) .price {
 		background: var(--color-primary);

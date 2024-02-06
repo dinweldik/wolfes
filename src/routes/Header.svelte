@@ -8,7 +8,7 @@
 
 <header>
 	<div class="external-apps">
-		<a class="btn" href="anmeldung">⚽️ Zur Anmeldung</a>
+		<a class="btn" href="anmeldung">⚽️ Hier Anmelden</a>
 	</div>
 	<Hero />
 	<nav>

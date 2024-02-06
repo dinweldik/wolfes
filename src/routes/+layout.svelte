@@ -12,7 +12,6 @@
 </script>
 
 <main>
-	<img src="https://fussballwoelfe.goatcounter.com/count?p=/test" />
 	<Header />
 	{#if $navigating}
 		<div class="spinner">

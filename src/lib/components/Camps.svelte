@@ -84,7 +84,6 @@
 	.pricing-table-divider {
 		display: block;
 		height: 1px;
-		background: rgba(0, 0, 0, 0.08);
 		max-width: 80%;
 		margin: 20px auto 0;
 	}

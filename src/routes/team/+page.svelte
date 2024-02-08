@@ -29,8 +29,9 @@
 
 	.team-grid {
 		margin-top: var(--size-5);
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
 		gap: var(--size-4);
 	}
 
@@ -38,12 +39,12 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		width: 30vh; /* Set a fixed width for each member */
 	}
 
 	.team-member img {
 		width: 100%;
 		height: auto;
-
 		margin-bottom: 10px;
 	}
 
@@ -52,9 +53,8 @@
 		font-size: 1.1em;
 	}
 	.name {
-		display: grid;
-		grid-template-columns: 1fr auto;
-		align-items: center;
+		display: flex;
 		gap: var(--size-2);
+		align-items: center;
 	}
 </style>

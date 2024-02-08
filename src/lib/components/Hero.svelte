@@ -9,10 +9,10 @@
 <section class="content center">
 	<header class="header">
 		<div class="logo-wrapper">
-			<img class="logo" src={logo} alt=" Icon" />
+			<a href="/"><img class="logo" src={logo} alt=" Icon" /></a>
 		</div>
 		<div class="app__infos">
-			<h1 class="name supertitle">{productInfo.name}</h1>
+			<a href="/"><h1 class="name supertitle">{productInfo.name}</h1></a>
 			<p class="description">{productInfo.description}</p>
 		</div>
 	</header>
@@ -72,6 +72,10 @@
 
 	.name {
 		margin: 0;
+	}
+
+	a {
+		text-decoration: none;
 	}
 
 	.description {

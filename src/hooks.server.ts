@@ -3,7 +3,7 @@ import * as dotenv from 'dotenv';
 dotenv.config();
 
 export const handle = async ({ event, resolve }) => {
-	event.locals.pb = new PocketBase(process.env.POCKETBASE_URL ?? 'https://b.marduk.xyz');
+	event.locals.pb = new PocketBase(process.env.POCKETBASE_URL);
 	event.locals.pb.authStore.loadFromCookie(event.request.headers.get('cookie') || '');
 
 	if (event.locals.pb.authStore.isValid) {

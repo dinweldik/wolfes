@@ -1,48 +1,96 @@
 <script>
 	export let events;
+	export let isForm = false;
+	export let initialSelected;
+	let selectedEvents = [initialSelected];
+
+	const handleSelect = (event) => {
+		if (selectedEvents.includes(event)) {
+			selectedEvents = selectedEvents.filter((e) => e !== event);
+		} else {
+			selectedEvents = [...selectedEvents, event];
+		}
+	};
+
+	let formattedCamps = events.map((camp) => {
+		return {
+			...camp,
+			date: `${new Date(camp.from).toLocaleString('de-DE', {
+				month: 'long',
+				day: 'numeric'
+			})} - ${new Date(camp.to).toLocaleString('de-DE', {
+				month: 'long',
+				day: 'numeric'
+			})}`
+		};
+	});
 </script>
 
 <div class="event-cards">
-	{#each events as event}
-		<a class="" href="/anmeldung">
-			<div class="pricing-box">
-				<span class="price">{event.date}</span>
-				<span class="pricing-table-divider" />
-				<span class="description">⚽️ Jetzt Anmelden</span>
-				<span class="pricing-table-divider" />
-			</div>
-		</a>
+	{#each formattedCamps as event}
+		<svelte:element
+			this={isForm ? 'div' : 'a'}
+			href={'/anmeldung?preselected=' + event.id}
+			on:click={isForm ? () => handleSelect(event.id) : () => {}}
+			role={isForm ? 'button' : 'link'}
+		>
+			{#if isForm}
+				<div class={selectedEvents.includes(event.id) ? 'card-box' : 'card-box greyed-out'}>
+					<span class="date">{event.date}</span>
+					<span class="card-table-divider" />
+					<span class="description"
+						>{selectedEvents.includes(event.id) ? '✅ Ausgewählt' : '❌ Nicht ausgewählt'}</span
+					>
+					<span class="card-table-divider" />
+				</div>
+			{:else}
+				<div class="card-box">
+					<span class="date">{event.date}</span>
+					<span class="card-table-divider" />
+					<span class="description">⚽️ Jetzt Anmelden</span>
+					<span class="card-table-divider" />
+				</div>
+			{/if}
+		</svelte:element>
 	{/each}
+	{#if isForm}
+		<input type="hidden" name="selectedCamps" value={JSON.stringify(selectedEvents)} />
+	{/if}
 </div>
 
 <style>
 	.event-cards {
-		margin-top: var(--size-5);
+		margin-block: var(--size-3);
+		padding-right: var(--size-3);
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		gap: var(--size-5);
 
 		@media screen and (max-width: 768px) {
 			grid-template-columns: 1fr 1fr;
-			font: var(--text-sm);
-			overflow-x: auto;
+			font: var(--text-xs);
 		}
 	}
-	a {
+	a,
+	div {
 		text-decoration: none;
 	}
 
 	.description {
 		padding-inline: var(--size-3);
-		font: var(--text-sm);
+		font: var(--text-xs);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 3em;
 	}
-	.price,
-	.pricing-box {
+	.date,
+	.card-box {
 		-webkit-transition: all ease-out 0.2s;
 		transition: all ease-out 0.2s;
 		text-align: center;
 	}
-	.price {
+	.date {
 		background: var(--color-primary);
 		color: #fff;
 		font-weight: var(--weight-bold);
@@ -50,13 +98,11 @@
 		display: block;
 		height: 6em;
 	}
-	.pricing-box:nth-child(2) .price {
+	.card-box:nth-child(2) .price,
+	.card-box:nth-child(3) .price {
 		background: var(--color-primary);
 	}
-	.pricing-box:nth-child(3) .price {
-		background: var(--color-primary);
-	}
-	.pricing-box:hover .price {
+	.card-box:hover .price {
 		box-shadow: inset 0 0 100px 0 rgba(0, 0, 0, 0.3);
 	}
 	.btn {
@@ -75,21 +121,25 @@
 			padding-inline: var(--size-3);
 		}
 	}
-	.pricing-table-divider {
+	.card-table-divider {
 		display: block;
 		height: 1px;
 		max-width: 80%;
 		margin: 20px auto 0;
 	}
 
-	.pricing-box {
+	.card-box {
 		overflow: hidden;
 		border-radius: 10px;
 		box-shadow: 0 0 30px rgba(0, 0, 0, 0.13);
-		border: 2px solid var(--color-primary);
+		border: 2px solid var(--color-primary); /* default state */
 	}
-	.pricing-box:hover {
+	.card-box:hover {
 		-webkit-transform: scale(1.01);
 		transform: scale(1.01);
+	}
+
+	.card-box.greyed-out {
+		opacity: 0.5;
 	}
 </style>

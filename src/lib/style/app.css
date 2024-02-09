@@ -18,8 +18,8 @@ body {
 }
 input,
 textarea {
-	background: var(--color-gray-500);
-	color: white;
+	background: var(--color-gray-50);
+	color: black;
 }
 button.unstyled {
 	border: none;

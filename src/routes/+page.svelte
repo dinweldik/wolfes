@@ -4,19 +4,12 @@
 	import spielen from '$lib/assets/spielen.jpg';
 	import GoogleMap from '$lib/components/GoogleMap.svelte';
 
-	let events = [
-		{ name: 'Camp 1', date: '1. Juli – 5. Juli' },
-		{ name: 'Camp 2', date: '29. Juli – 2. August' },
-		{ name: 'Camp 3', date: '5. August – 9. August' },
-		{ name: 'Camp 4', date: '26. August – 30. August' }
-		// ... weitere Events
-		// TODO add valid until , so that events dissapear after the date
-	];
+	export let data;
 </script>
 
 <section class="content">
 	<h1>Aktuelle Fußballcamps</h1>
-	<Camps {events} />
+	<Camps events={data.camps} />
 
 	<div>
 		<h1>Herzlich Willkommen zu unseren Sommer-Fußballcamps!</h1>
@@ -107,6 +100,7 @@
 	h2 {
 		text-align: center;
 		color: var(--color-primary);
+		margin-bottom: var(--size-12);
 	}
 	.versus {
 		display: grid;

@@ -1,7 +1,7 @@
 <script>
 	import Camps from '$lib/components/Camps.svelte';
-	import platz from '$lib/assets/platz.jpg';
-	import spielen from '$lib/assets/spielen.jpg';
+	import platz from '$lib/assets/platz.webp';
+	import spielen from '$lib/assets/spielen.webp';
 	import GoogleMap from '$lib/components/GoogleMap.svelte';
 
 	export let data;

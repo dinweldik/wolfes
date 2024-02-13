@@ -39,7 +39,7 @@
 					<span class="date">{event.date}</span>
 					<span class="card-table-divider" />
 					<span class="description">
-						<a href={event.href}>{event.desc}</a>
+						<a href={event.href} target="_blank">{event.desc}</a>
 					</span>
 					<span class="card-table-divider" />
 				</div>

@@ -1,20 +1,14 @@
 <section class="content">
 	<h1>DSGVO-Richtlinie</h1>
 	<p>
-		<strong>fussballwoelfe.at</strong>, ein Produkt von
-		<a href="https://dinweldik.com">dinweldik e.U</a>, verpflichtet sich zum Schutz der Privatsphäre
-		und Sicherheit Ihrer persönlichen Daten. Diese DSGVO-Richtlinie erklärt, wie wir Ihre
-		persönlichen Daten sammeln, verwenden und teilen, wenn Sie unsere Website nutzen und jegliche
-		Softwareprodukte, die wir anbieten.
+		<strong>fussballwoelfe.at</strong> verpflichtet sich zum Schutz der Privatsphäre und Sicherheit Ihrer
+		persönlichen Daten. Diese DSGVO-Richtlinie erklärt, wie wir Ihre persönlichen Daten sammeln, verwenden
+		und teilen, wenn Sie unsere Website nutzen und jegliche Softwareprodukte, die wir anbieten.
 	</p>
 	<h2>Welche persönlichen Daten wir sammeln</h2>
 	<p>
-		Wenn Sie ein Konto bei <strong>fussballwoelfe.at</strong> mit Google Sign-In erstellen, sammeln
-		wir Ihre E-Mail, Ihr Profilbild und Ihren Namen von Ihrem Google-Konto. Wenn Sie ein
-		Softwareprodukt von uns kaufen, können wir auch Zahlungsinformationen sammeln. Wir können auch
-		Daten über Ihre Nutzung unserer Website und Softwareprodukte sammeln, wie z.B. IP-Adresse und
-		Geräteinformationen. Wir verwenden <a href="https://plausible.io">plausible.io</a>, um den
-		Webverkehr auf unserer Website zu verfolgen, und Google für Authentifizierungszwecke.
+		Wir verwenden <a href="https://plausible.io">plausible.io</a>, um den Webverkehr auf unserer
+		Website zu verfolgen.
 	</p>
 	<h2>Wie wir Ihre persönlichen Daten verwenden</h2>
 	<p>
@@ -47,7 +41,7 @@
 		Datenübertragbarkeit zu beantragen. Sie haben auch das Recht, Ihre Zustimmung zur Verarbeitung
 		Ihrer persönlichen Daten jederzeit zu widerrufen. Um diese Rechte auszuüben oder wenn Sie Fragen
 		zu unserer DSGVO-Richtlinie haben, kontaktieren Sie uns bitte unter
-		<a href="mailto:support@dinweldik.com">support@dinweldik.com</a>.
+		<a href="mailto:verein@fussballwoelfe.at">verein@fussballwoelfe.at</a>.
 	</p>
 	<h2>Änderungen unserer DSGVO-Richtlinie</h2>
 	<p>

@@ -6,14 +6,17 @@
 			und Offenlegungspflicht laut §25 Mediengesetz.
 		</p>
 
-		<p><strong>SV Fussballwölfe</strong><br />ZVR: TODO</p>
+		<p><strong>SV Fussballwölfe</strong></p>
 
-		<p>Töpfelgasse 16-18/2/10<br />1140 Wien,<br />Österreich</p>
+		<!-- TODO		<p>ZVR: </p> -->
+
+		<p>Töpfelgasse 16-18/2/10</p>
+		<p>1140 Wien, Österreich</p>
 		<p>
-			<strong>Organschaftliche Vertreter:</strong><br />Karim Rajhi
+			<strong>Organschaftliche Vertreter:</strong> Karim Rajhi
 		</p>
 		<p><strong>Vereinssitz:</strong> 1140 Wien</p>
-		<p><strong>Vereinszweck:</strong><br />Fußballverein</p>
+		<p><strong>Vereinszweck:</strong> Fußballverein</p>
 		<h2>EU-Streitschlichtung</h2>
 		<p>
 			Gemäß Verordnung über Online-Streitbeilegung in Verbraucherangelegenheiten (ODR-Verordnung)
@@ -73,11 +76,11 @@
 	h2 {
 		text-align: center;
 		color: var(--color-primary);
-		margin-bottom: var(--size-12);
+		margin-bottom: var(--size-10);
 	}
 
 	div,
 	p {
-		margin-block: var(--size-6);
+		margin-block: var(--size-4);
 	}
 </style>

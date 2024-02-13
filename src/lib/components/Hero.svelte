@@ -20,12 +20,17 @@
 </section>
 
 <style lang="postcss">
+	.app__infos {
+		@media screen and (max-width: 768px) {
+			text-align: center;
+		}
+	}
 	.header {
 		display: -ms-flexbox;
 		display: flex;
 		-ms-flex-direction: row;
 		flex-direction: row;
-		margin-bottom: 16px;
+		margin-top: var(--size-8);
 		-ms-flex-align: center;
 		align-items: center;
 		font: var(--text-sm);
@@ -37,8 +42,7 @@
 		@media (max-width: 768px) {
 			-ms-flex-align: start;
 			align-items: flex-start;
-			margin-top: 32px;
-			margin-bottom: 16px;
+			margin-inline: var(--size-8);
 		}
 	}
 
@@ -48,15 +52,12 @@
 		background-size: contain;
 		max-width: 150px;
 		max-height: 150px;
-		padding: 1px;
-		margin-right: 64px;
 		width: 100%;
 		height: 100%;
 		background-repeat: no-repeat;
 		@media (max-width: 768px) {
 			max-width: 150px;
 			max-height: 150px;
-			margin-right: 16px;
 		}
 	}
 
@@ -68,10 +69,6 @@
 		mask-size: cover;
 		width: 100%;
 		height: auto;
-	}
-
-	.name {
-		margin: 0;
 	}
 
 	a {

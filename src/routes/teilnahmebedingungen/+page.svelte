@@ -1,8 +1,8 @@
 <section class="content">
 	<p><strong>Ort:</strong> Waldgasse 1, 3001 Mauerbach</p>
 	<p>
-		<strong>Zeit:</strong> Betreuung ab 8 Uhr; Trainingsbeginn: 9 Uhr, bitte spätestens um 8:50 Uhr vor
-		Ort sein! Ende der Betreuung: 16 Uhr; Abholen ab 15 Uhr möglich.
+		<strong>Zeit:</strong> Betreuung ab 8 Uhr; Trainingsbeginn: 9:30 Uhr, bitte spätestens um 9:15 Uhr
+		vor Ort sein! Ende der Betreuung: 16 Uhr; Abholen ab 15 Uhr möglich.
 	</p>
 	<p>Die Kinder bekommen Mittagessen und Obst/Eis.</p>
 	<p>

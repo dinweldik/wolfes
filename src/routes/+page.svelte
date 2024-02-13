@@ -26,23 +26,24 @@
 		<ul class="text-cards">
 			<li>
 				<p>
-					<strong>Professionelles Fußballtraining</strong> Unsere qualifizierten Trainer sorgen dafür,
-					dass jedes Kind individuell gefördert wird. Der Fokus liegt darauf, fußballerische Fähigkeiten
-					spielerisch und effektiv zu verbessern.
+					<strong>Professionelles Fußballtraining</strong> Unsere qualifizierten Trainer sorgen
+					dafür, dass jedes Kind individuell gefördert wird. Der Fokus liegt darauf, fußballerische
+					Fähigkeiten spielerisch und effektiv zu verbessern. Hier finden Sie die Instagram-Seite
+					unseres <a href="https://instagram.com/coach.rida" target="_blank">Cheftrainers</a>.
 				</p>
 			</li>
 			<li>
 				<p>
-					<strong>Athletiktraining für die kleinen Sportler</strong> Neben Fußball legen wir Wert auf
-					die allgemeine körperliche Entwicklung. Durch gezieltes Athletiktraining verbessern wir die
-					Koordination und Fitness der Kinder.
+					<strong>Abwechslungsreiches Athletiktraining </strong> Neben Fußball legen wir Wert auf die
+					allgemeine körperliche Entwicklung. Durch gezieltes Athletiktraining verbessern wir die Koordination
+					und Kondition der Kinder.
 				</p>
 			</li>
 			<li>
 				<p>
 					<strong>Betreute Mittagspause mit Mittagessen</strong> Wir sorgen dafür, dass die Kinder auch
-					während der Mittagspause bestens versorgt sind. Ein ausgewogenes Mittagessen und Zeit zum Entspannen
-					sind bei uns inklusive.
+					während der Mittagspause bestens versorgt sind. Zu Mittag gibt es ein ausgewogenes Mittagessen
+					inkl. Getränk und Nachspeise.
 				</p>
 			</li>
 			<li>

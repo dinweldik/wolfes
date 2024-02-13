@@ -19,7 +19,7 @@
 				required={true}
 				max={new Date().toISOString().split('T')[0]}
 			/>
-			<!-- 			<Dinput name="heimatverein" type="text" placeholder="Heimatverein" /> -->
+			<Dinput name="heimatverein" type="text" placeholder="Heimatverein" />
 		</div>
 
 		<!-- 	<div class="form-group valid required width-50 fid_9299195 required field-select">
@@ -64,9 +64,9 @@
 		/>
 		<Camps events={data.camps} isForm={true} initialSelected={data.preselected} />
 		<div class="legal">
-			<Checkbox name="insuranceApproved" required={true}
-				>Ich stimme zu, dass mein Kind körperlich voll belastbar ist. Eventuelle Verletzungen oder
-				Erkrankungen werden durch die eigene Krankenversicherung abgedeckt.*</Checkbox
+			<Checkbox name="insuranceApproved" required={true}>
+				Mein Kind ist körperlich voll belastbar; Verletzungen oder Krankheiten deckt unsere
+				Krankenversicherung.*</Checkbox
 			>
 
 			<Checkbox name="terms" required={true}>

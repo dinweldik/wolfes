@@ -16,7 +16,7 @@
 			<li><a href="/">Startseite</a></li>
 			<li><a href="/verein">Verein</a></li>
 			<!-- 			<li><a href="/fotos">Fotos</a></li> -->
-			<li><a href="/team">Team</a></li>
+			<!-- <li><a href="/team">Team</a></li> -->
 		</ul>
 	</nav>
 </header>

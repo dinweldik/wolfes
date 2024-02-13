@@ -6,7 +6,6 @@
 	<div class="footer-container">
 		<div class="footer-contact">
 			<p class="bold">SV Fußballwölfe</p>
-			<p>Waldgasse 1<br />3001 Mauerbach</p>
 			<p>Organschaftliche Vertreter: Karim Rajhi</p>
 			<p>Email: <a href="mailto:verein@feuerwölfe.at">verein@fussballwoelfe.at</a></p>
 			<p>Telefon: +43 6603749790</p>
@@ -14,11 +13,12 @@
 		<div class="footer-links">
 			<p><a href="/privacy">Datenschutz</a></p>
 			<p><a href="/legal">Impressum</a></p>
-			<p><a href="mailto:verein@feuerwölfe.at">Kontakt</a></p>
+			<p><a href="/teilnahmebedingungen">Teilnahmebedingungen</a></p>
+			<!-- 			<p><a href="mailto:verein@feuerwoelfe.at">Kontakt</a></p> -->
 		</div>
 		<div class="logo">
 			<img src={logo} alt="logo" />
-			<p>Made with ❤️ by <a href="https://dinweldik.com" target="_blank">dinweldik.com</a></p>
+			<p>Made by <a href="https://dinweldik.com" target="_blank">dinweldik.com</a></p>
 		</div>
 	</div>
 </footer>

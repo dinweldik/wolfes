@@ -23,5 +23,6 @@
 	}
 	input {
 		margin-right: var(--size-2);
+		font: var(--text-xl);
 	}
 </style>

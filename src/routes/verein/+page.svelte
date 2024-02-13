@@ -13,17 +13,9 @@
 		<li>
 			<p>
 				<strong>Jugendförderung durch umfassendes Training</strong> Unser Ansatz geht weit über das übliche
-				Fußballtraining hinaus. Wir legen großen Wert auf Athletiktraining und Koordination, um die körperliche
-				Entwicklung unserer Spieler zu fördern. Dies trägt nicht nur zur Verbesserung ihrer fußballerischen
-				Fähigkeiten bei, sondern auch zur allgemeinen Fitness und Gesundheit.
-			</p>
-		</li>
-		<li>
-			<p>
-				<strong>Laufschule für Geschwindigkeit und Ausdauer</strong> Ein wichtiger Bestandteil unseres
-				Trainingsprogramms ist die Laufschule. Hier konzentrieren wir uns auf die Entwicklung von Geschwindigkeit,
-				Ausdauer und Agilität. Dies hilft unseren Spielern, auf dem Spielfeld eine bessere Leistung zu
-				erbringen und ihre persönlichen sportlichen Ziele zu erreichen.
+				Fußballtraining hinaus. Wir legen großen Wert auf Athletiktraining, um die körperliche Entwicklung
+				unserer Spieler zu fördern. Dies trägt nicht nur zur Verbesserung ihrer fußballerischen Fähigkeiten
+				bei, sondern auch zur allgemeinen Fitness und Gesundheit.
 			</p>
 		</li>
 		<li>
@@ -39,6 +31,15 @@
 				Kombination aus technischem Training, Athletikübungen und koordinativen Herausforderungen. Sie
 				sind eine hervorragende Gelegenheit für junge Spieler, ihre Fähigkeiten in einer spaßigen und
 				unterstützenden Umgebung zu verbessern.
+			</p>
+		</li>
+		<li>
+			<p>
+				<strong>Unser Team</strong>
+				Das Herz unseres Fußballcamps schlägt in unserem Team aus pädagogisch und sportlich erfahrenen
+				Trainern und Betreuern. Jedes Mitglied bringt eine tiefe Leidenschaft für den Fußball und die
+				Arbeit mit Kindern mit. Wir sind stolz darauf, ein Team zu haben, das nicht nur über herausragende
+				fußballerische Fähigkeiten verfügt, sondern auch eine starke pädagogische Kompetenz besitzt.
 			</p>
 		</li>
 	</ul>

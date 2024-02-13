@@ -2,7 +2,7 @@
 	export let events;
 	export let isForm = false;
 	export let initialSelected;
-	let selectedEvents = [initialSelected];
+	let selectedEvents = initialSelected ? [initialSelected] : [];
 
 	const handleSelect = (event) => {
 		if (selectedEvents.includes(event)) {
@@ -24,41 +24,67 @@
 			})}`
 		};
 	});
+	if (isForm) {
+		formattedCamps = formattedCamps.filter((camp) => {
+			return camp.href === '';
+		});
+	}
 </script>
 
 <div class="event-cards">
 	{#each formattedCamps as event}
-		<svelte:element
-			this={isForm ? 'div' : 'a'}
-			href={'/anmeldung?preselected=' + event.id}
-			on:click={isForm ? () => handleSelect(event.id) : () => {}}
-			role={isForm ? 'button' : 'link'}
-		>
-			{#if isForm}
-				<div class={selectedEvents.includes(event.id) ? 'card-box' : 'card-box greyed-out'}>
-					<span class="date">{event.date}</span>
-					<span class="card-table-divider" />
-					<span class="description"
-						>{selectedEvents.includes(event.id) ? '✅ Ausgewählt' : '❌ Nicht ausgewählt'}</span
-					>
-					<span class="card-table-divider" />
-				</div>
-			{:else}
+		{#if event.href}
+			<svelte:element this={'a'} href={event.href} target="_blank" role={'link'}>
 				<div class="card-box">
 					<span class="date">{event.date}</span>
 					<span class="card-table-divider" />
-					<span class="description">⚽️ Jetzt Anmelden</span>
+					<span class="description">
+						<a href={event.href}>{event.desc}</a>
+					</span>
 					<span class="card-table-divider" />
 				</div>
-			{/if}
-		</svelte:element>
+			</svelte:element>
+		{:else}
+			<svelte:element
+				this={isForm ? 'div' : 'a'}
+				href={'/anmeldung?preselected=' + event.id}
+				on:click={isForm ? () => handleSelect(event.id) : () => {}}
+				role={isForm ? 'button' : 'link'}
+			>
+				{#if isForm}
+					<div class={selectedEvents.includes(event.id) ? 'card-box' : 'card-box greyed-out'}>
+						<span class="date">{event.date}</span>
+						<span class="card-table-divider" />
+						<span class="price">260€</span>
+						<span class="card-table-divider" />
+						<span class="description"
+							>{selectedEvents.includes(event.id) ? '✅ Ausgewählt' : '❌ Nicht ausgewählt'}</span
+						>
+						<span class="card-table-divider" />
+					</div>
+				{:else}
+					<div class="card-box">
+						<span class="date">{event.date}</span>
+						<span class="card-table-divider" />
+						<span class="description"> ⚽️ Jetzt Anmelden </span>
+						<span class="card-table-divider" />
+					</div>
+				{/if}
+			</svelte:element>
+		{/if}
 	{/each}
+</div>
+<div class="center">
 	{#if isForm}
 		<input type="hidden" name="selectedCamps" value={JSON.stringify(selectedEvents)} />
+		<p>Gesamtkosten: {selectedEvents.length * 260} €</p>
 	{/if}
 </div>
 
 <style>
+	.center {
+		margin-top: var(--size-5);
+	}
 	.event-cards {
 		margin-block: var(--size-3);
 		padding-right: var(--size-3);
@@ -98,13 +124,11 @@
 		display: block;
 		height: 6em;
 	}
-	.card-box:nth-child(2) .price,
-	.card-box:nth-child(3) .price {
+	.card-box:nth-child(2),
+	.card-box:nth-child(3) {
 		background: var(--color-primary);
 	}
-	.card-box:hover .price {
-		box-shadow: inset 0 0 100px 0 rgba(0, 0, 0, 0.3);
-	}
+
 	.btn {
 		background: var(--color-primary);
 		border: 1px solid;

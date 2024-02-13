@@ -12,7 +12,8 @@ const adminLogin = async () => {
 export const getCamps = async () => {
 	await adminLogin();
 	return await client.collection('camps').getFullList(8 /* batch size */, {
-		filter: 'from > @now'
+		filter: 'from > @now',
+		sort: 'from'
 	});
 };
 

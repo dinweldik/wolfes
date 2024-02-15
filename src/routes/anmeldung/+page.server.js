@@ -1,4 +1,5 @@
 import { createAnmeldung, getCamps } from '$lib/api/db';
+import { sendTelegramMessage } from '$lib/api/telegram';
 import { error, redirect } from '@sveltejs/kit';
 
 export const load = async ({ url }) => {
@@ -24,6 +25,7 @@ export const actions = {
 		let id;
 		try {
 			const response = await createAnmeldung(final);
+			sendTelegramMessage(`Neue Anmeldung: ${response.email} :: ${response.id}`);
 			id = response.id;
 		} catch (err) {
 			console.log('Error:', err);

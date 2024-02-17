@@ -58,7 +58,7 @@
 						<span class="price">260€</span>
 						<span class="card-table-divider" />
 						<span class="description"
-							>{selectedEvents.includes(event.id) ? '✅ Ausgewählt' : '❌ Nicht ausgewählt'}</span
+							>{selectedEvents.includes(event.id) ? '✅ Ausgewählt' : '🟩 Nicht ausgewählt'}</span
 						>
 						<span class="card-table-divider" />
 					</div>

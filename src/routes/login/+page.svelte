@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
 	import AuthButtons from '$lib/components/AuthButtons.svelte';
 	import Dinput from '$lib/components/Dinput.svelte';
 	import type { PageData } from './$types';
@@ -39,3 +39,4 @@
 		margin: var(--size-4);
 	}
 </style>
+ -->

@@ -3,7 +3,7 @@ import { redirect } from '@sveltejs/kit';
 
 export const load: PageServerLoad = async ({ locals, url }) => {
 	if (locals.pb.authStore.isValid) {
-		throw redirect(303, '/');
+		throw redirect(303, '/management');
 	}
 	const authMethods = await locals.pb?.collection('users').listAuthMethods();
 	if (!authMethods) {
@@ -50,6 +50,6 @@ export const actions = {
 				email: data.email
 			};
 		}
-		throw redirect(303, '/');
+		throw redirect(303, '/management');
 	}
 };

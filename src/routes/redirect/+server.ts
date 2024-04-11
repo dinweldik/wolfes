@@ -12,12 +12,12 @@ export const GET: RequestHandler = async ({ locals, url, cookies }: RequestEvent
 
 	if (!provider) {
 		console.log('Provider not found');
-		throw redirect(303, '/login');
+		throw redirect(303, '/admin');
 	}
 
 	if (expectedState !== state) {
 		console.log('state does not match expected', expectedState, state);
-		throw redirect(303, '/login');
+		throw redirect(303, '/admin');
 	}
 
 	try {

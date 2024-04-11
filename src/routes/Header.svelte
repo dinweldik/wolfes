@@ -8,7 +8,13 @@
 
 <header>
 	<div class="external-apps">
-		<a class="btn" href="/anmeldung">⚽️ Hier Anmelden</a>
+		{#if user}
+			<form action="/logout" method="POST">
+				<button class="btn">🚪 Logout</button>
+			</form>
+		{:else}
+			<a class="btn" href="/anmeldung">⚽️ Hier Anmelden</a>
+		{/if}
 	</div>
 	<Hero />
 	<nav>

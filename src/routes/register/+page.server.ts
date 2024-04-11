@@ -28,6 +28,6 @@ export const actions = {
 			};
 		}
 
-		throw redirect(303, '/login');
+		throw redirect(303, '/admin');
 	}
 };

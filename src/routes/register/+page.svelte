@@ -6,7 +6,7 @@
 <section class="content center">
 	<h2>Register for an account</h2>
 	<p class="text-center mt-1">
-		Or <a href="/login">sign in</a> if you already have an account.
+		Or <a href="/admin">sign in</a> if you already have an account.
 	</p>
 	<form method="POST" action="?/register">
 		<div class="form">

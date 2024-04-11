@@ -1,4 +1,4 @@
-<!-- <script lang="ts">
+<script lang="ts">
 	import AuthButtons from '$lib/components/AuthButtons.svelte';
 	import Dinput from '$lib/components/Dinput.svelte';
 	import type { PageData } from './$types';
@@ -8,10 +8,7 @@
 </script>
 
 <section class="content center">
-	<h2>Sign in to your account</h2>
-	<p>
-		Or <a href="/register">register</a> if you don't already have an account.
-	</p>
+	<h2>Access Admin Dashboard</h2>
 	<form method="POST" action="?/login">
 		<div class="form">
 			<Dinput type="email" name="email" placeholder="email" />
@@ -39,4 +36,3 @@
 		margin: var(--size-4);
 	}
 </style>
- -->

@@ -25,7 +25,7 @@ export const actions = {
 		let id;
 		try {
 			const response = await createAnmeldung(final);
-			sendTelegramMessage(`Neue Anmeldung: ${response.email} :: ${response.id}`);
+			await sendTelegramMessage(`Neue Anmeldung: ${response.selectedCamps} :: ${response.id}`);
 			id = response.id;
 		} catch (err) {
 			console.log('Error:', err);

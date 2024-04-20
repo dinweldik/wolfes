@@ -5,7 +5,7 @@
 <footer>
 	<div class="footer-container">
 		<div class="footer-contact">
-			<p class="bold">SV Fußballwölfe</p>
+			<p class="bold">Sportverein Fußballwölfe</p>
 			<p>Organschaftliche Vertreter: Karim Rajhi</p>
 			<p>Email: <a href="mailto:verein@fussballwoelfe.at">verein@fussballwoelfe.at</a></p>
 			<p>Telefon: +43 6603749790</p>

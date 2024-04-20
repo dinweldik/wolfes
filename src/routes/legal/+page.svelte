@@ -6,9 +6,9 @@
 			und Offenlegungspflicht laut §25 Mediengesetz.
 		</p>
 
-		<p><strong>SV Fussballwölfe</strong></p>
+		<p><strong>Sportverein Fussballwölfe</strong></p>
 
-		<!-- TODO		<p>ZVR: </p> -->
+		<p>ZVR: 1067059475</p>
 
 		<p>Töpfelgasse 16-18/2/10</p>
 		<p>1140 Wien, Österreich</p>

@@ -8,7 +8,7 @@
 	<p>
 		<strong>Kosten:</strong> Eur 260,- (inkl. Essen und Trinken)
 	</p>
-	<p>Das Camp findet ab 20 angemeldeten Kindern statt.</p>
+	<p>Das Camp findet ab 10 angemeldeten Kindern statt.</p>
 	<p>Findet das Camp nicht statt, so erhalten die Teilnehmer den Campbeitrag zurück.</p>
 	<p><strong>Haftung:</strong></p>
 	<p>

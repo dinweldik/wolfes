@@ -77,11 +77,17 @@
 <div class="center">
 	{#if isForm}
 		<input type="hidden" name="selectedCamps" value={JSON.stringify(selectedEvents)} />
-		<p>Gesamtkosten: {selectedEvents.length * 260} €</p>
+		<p>
+			<strong>Gesamtkosten: {selectedEvents.length * 260} €</strong>
+		</p>
+		<small>10% Rabatt bei Anmeldungen ab 3 Personen. Mehr Informationen auf Anfrage</small>
 	{/if}
 </div>
 
 <style>
+	small {
+		text-align: center;
+	}
 	.center {
 		margin-top: var(--size-5);
 	}

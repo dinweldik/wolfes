@@ -26,7 +26,7 @@ export const actions = {
 		try {
 			const response = await createAnmeldung(final);
 			await sendTelegramMessage(
-				`Neue Anmeldung für ${response.selectedCamps.length} Camp(s) :: ${response.id}`
+				`Mashallah! Neue Anmeldung für ${response.selectedCamps.length} Camp(s) :: ${response.id}`
 			);
 			id = response.id;
 		} catch (err) {

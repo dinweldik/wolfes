@@ -1,7 +1,9 @@
 <script>
 	import Camps from '$lib/components/Camps.svelte';
-	import platz from '$lib/assets/platz.webp';
-	import spielen from '$lib/assets/spielen.webp';
+	import kids1 from '$lib/assets/kids1.webp';
+	import kids2 from '$lib/assets/kids2.webp';
+	import kids3 from '$lib/assets/kids3.webp';
+	import kids4 from '$lib/assets/kids4.webp';
 	import GoogleMap from '$lib/components/GoogleMap.svelte';
 
 	export let data;
@@ -26,10 +28,9 @@
 		<ul class="text-cards">
 			<li>
 				<p>
-					<strong>Professionelles Fußballtraining</strong> Unsere qualifizierten Trainer sorgen
-					dafür, dass jedes Kind individuell gefördert wird. Der Fokus liegt darauf, fußballerische
-					Fähigkeiten spielerisch und effektiv zu verbessern. Hier finden Sie die Instagram-Seite
-					unseres <a href="https://instagram.com/coach.rida" target="_blank">Cheftrainers</a>.
+					<strong>Qualitatives Fußballtraining</strong> Unsere qualifizierten Trainer sorgen dafür, dass
+					jedes Kind individuell gefördert wird. Der Fokus liegt darauf, sportliche, athletische und
+					fußballerische Fähigkeiten spielerisch und effektiv zu verbessern.
 				</p>
 			</li>
 			<li>
@@ -73,26 +74,32 @@
 		</p>
 	</div>
 	<div class="images">
-		<img src={platz} alt="Sportplatz" />
-		<img src={spielen} alt="Kinder" />
+		<img src={kids1} alt="kids1" />
+		<img src={kids4} alt="kids4" />
+		<img src={kids3} alt="kids3" />
+		<img src={kids2} alt="kids2" />
 	</div>
 </section>
 
 <style>
 	.images {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 		gap: var(--size-4);
 
 		& img {
 			border: 1px solid #ddd; /* Example border */
 			border-radius: var(--size-2);
+			object-fit: cover; /* Ensure image covers container */
+			width: 100%;
+			height: 100%;
 		}
 
 		& img:hover {
 			-webkit-transform: scale(1.01);
 			transform: scale(1.01);
 		}
+
 		@media screen and (max-width: 768px) {
 			grid-template-columns: 1fr;
 		}

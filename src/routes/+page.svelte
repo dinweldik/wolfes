@@ -4,7 +4,6 @@
 	import kids2 from '$lib/assets/kids2.webp';
 	import kids3 from '$lib/assets/kids3.webp';
 	import kids4 from '$lib/assets/kids4.webp';
-	import GoogleMap from '$lib/components/GoogleMap.svelte';
 
 	export let data;
 </script>

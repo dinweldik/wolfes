@@ -78,6 +78,9 @@
 				Die Anmeldung ist <strong>vorläufig und unverbindlich</strong>. Wir werden Sie kontaktieren,
 				um die Zahlung abzuwickeln, sobald die Camps festgelegt sind.
 			</p>
+			<p>
+				<em>Bitte überprüfen Sie Ihren Spam-Ordner, falls Sie keine E-Mail von uns erhalten.</em>
+			</p>
 		</div>
 		<div class="center">
 			<button type="submit" class="btn">Absenden</button>

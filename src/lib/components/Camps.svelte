@@ -94,18 +94,23 @@
 	.event-cards {
 		margin-block: var(--size-3);
 		padding-right: var(--size-3);
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center; /* Centers the flex items horizontally */
+		align-items: center; /* Centers the flex items vertically */
 		gap: var(--size-5);
 
 		@media screen and (max-width: 768px) {
-			grid-template-columns: 1fr 1fr;
+			flex-direction: column; /* Stacks items vertically on smaller screens */
 			font: var(--text-xs);
+			align-items: center; /* Ensure center alignment on smaller screens */
 		}
 	}
+
 	a,
 	div {
 		text-decoration: none;
+		min-width: 260px;
 	}
 
 	.description {
